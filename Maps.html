@@ -1,70 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Interactive Quiz - Quiz</title>
-        <link href="style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <header>
-            <h1>Interactive Quiz</h1>
-        </header>
-        <nav>
-            <a href="Home.html">Home</a>
-            <a href="Items.html">Items</a>
-            <a href="Maps.html">Maps</a>
-            <a href="People.html">People</a>
-        </nav>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Interactive Quiz - Quiz</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1>Interactive Quiz</h1>
+    </header>
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="Items.html">Items</a>
+        <a href="Maps.html">Maps</a>
+        <a href="People.html">People</a>
+    </nav>
     <main>
-    <h2>Items In Game Quiz</h2>
-    <p>Answer the following questions:</p>
-    <div class="quiz-container">
-    <div class="quiz-question">
-    </div>
-        <p><strong>Question?</strong></p>
-        <ul class="quiz-options">
-            <li><button onclick="checkAnswer(this, false, 'result1')">answer1</button></li>
-            <li><button onclick="checkAnswer(this, true, 'result1')">answer 2</button></li>
-            <li><button onclick="checkAnswer(this, false, 'result1')">answer 3</button></li>
-            <li><button onclick="checkAnswer(this, false, 'result1')">answer 4</button></li>
-        </ul>
-    </div>
-    <div id="result1" class="result"></div>
-</section>
-<div class="quiz-container">
-<div class="quiz-question">
-</div>
-    <p><strong>Which image is correct?</strong></p>
-    <div class="quiz-options">
-        <button onclick="checkAnswer(this, false, 'result2')">
-            <img src="image1.jpg" alt="Image 1">
-        </button>
-        <button onclick="checkAnswer(this, true, 'result2')">
-            <img src="eiffel_tower.jpg" alt="Eiffel Tower">
-        </button>
-        <button onclick="checkAnswer(this, false, 'result2')">
-            <img src="image3.jpg" alt="Image 3">
-        </button>
-        <button onclick="checkAnswer(this, false, 'result2')">
-            <img src="image4.jpg" alt="Image 4">
-        </button>
-    </div>
-</div>
-<div id="result2" class="result"></div>
-</main>
-<footer>
-    <p>&copy; 2024 - LIS-753</p>
-    <p>Contact: mvillanueva@my.dom.edu | Phone: (xxx) xxx-xxxx</p>
-    <p>Mathew Villanueva</p>
-</footer>
-<script>
-    function checkAnswer(button, isCorrect, resultId) { 
-  const result = document.getElementById(resultId); 
-  result.textContent = isCorrect ? 'Correct! Great job!' : 'Incorrect. Try again!';
-  result.style.color = isCorrect ? 'green' : 'red';
-  result.style.display = 'block'; 
-}
-</script>
+        <h2>Items In Game Quiz</h2>
+        <p>Answer the following questions:</p>
+        <div class="quiz-container">
+            <div class="quiz-question">
+            </div>
+            <p><strong>Question?</strong></p>
+            <ul class="quiz-options">
+                <li><button onclick="checkAnswer(this, false, 'result1')">answer1</button></li>
+                <li><button onclick="checkAnswer(this, true, 'result1')">answer 2</button></li>
+                <li><button onclick="checkAnswer(this, false, 'result1')">answer 3</button></li>
+                <li><button onclick="checkAnswer(this, false, 'result1')">answer 4</button></li>
+            </ul>
+        </div>
+        <div id="result1" class="result"></div>
+        <div class="quiz-container">
+            <div class="quiz-question">
+            </div>
+            <p><strong>Which image is correct?</strong></p>
+            <div class="quiz-options">
+                <button onclick="checkAnswer(this, false, 'result2')">
+                    <img src="image1.jpg" alt="Image 1">
+                </button>
+                <button onclick="checkAnswer(this, true, 'result2')">
+                    <img src="eiffel_tower.jpg" alt="Eiffel Tower">
+                </button>
+                <button onclick="checkAnswer(this, false, 'result2')">
+                    <img src="image3.jpg" alt="Image 3">
+                </button>
+                <button onclick="checkAnswer(this, false, 'result2')">
+                    <img src="image4.jpg" alt="Image 4">
+                </button>
+            </div>
+        </div>
+        <div id="result2" class="result"></div>
+        <div class="quiz-container">
+            <div class="quiz-question">
+            </div>
+            <p><strong>Question 1 </strong></p>
+            <ul class="quiz-options">
+                <li><button onclick="checkAnswer(this, false, 'result1')">answer1</button></li>
+                <li><button onclick="checkAnswer(this, true, 'result1')">answer 2</button></li>
+                <li><button onclick="checkAnswer(this, false, 'result1')">answer 3</button></li>
+                <li><button onclick="checkAnswer(this, false, 'result1')">answer 4</button></li>
+            </ul>
+        </div>
+        <div id="result1" class="result"></div>
+        <p><strong>Which image is correct?</strong></p>
+        <div class="quiz-options">
+            <button onclick="checkAnswer(this, false, 'result2')">
+                <img src="image1.jpg" alt="Image 1">
+            </button>
+            <button onclick="checkAnswer(this, true, 'result2')">
+                <img src="eiffel_tower.jpg" alt="Eiffel Tower">
+            </button>
+            <button onclick="checkAnswer(this, false, 'result2')">
+                <img src="image3.jpg" alt="Image 3">
+            </button>
+            <button onclick="checkAnswer(this, false, 'result2')">
+                <img src="image4.jpg" alt="Image 4">
+            </button>
+        </div>
+        </div>
+        <div id="result2" class="result"></div>
+        <div class="quiz-container">
+            <div class="quiz-question">
+            </div>
+            <p><strong>Question 1 </strong></p>
+            <ul class="quiz-options">
+                <li><button onclick="checkAnswer(this, false, 'result1')">answer1</button></li>
+                <li><button onclick="checkAnswer(this, true, 'result1')">answer 2</button></li>
+                <li><button onclick="checkAnswer(this, false, 'result1')">answer 3</button></li>
+                <li><button onclick="checkAnswer(this, false, 'result1')">answer 4</button></li>
+            </ul>
+        </div>
+        <div id="result1" class="result"></div>
+        <div class="quiz-container">
+            <div class="quiz-question">
+            </div>
+            <p><strong>Question 1 </strong></p>
+            <ul class="quiz-options">
+                <li><button onclick="checkAnswer(this, false, 'result1')">answer1</button></li>
+                <li><button onclick="checkAnswer(this, true, 'result1')">answer 2</button></li>
+                <li><button onclick="checkAnswer(this, false, 'result1')">answer 3</button></li>
+                <li><button onclick="checkAnswer(this, false, 'result1')">answer 4</button></li>
+            </ul>
+        </div>
+        <div id="result1" class="result"></div>
+        <p><strong>Which image is correct?</strong></p>
+        <div class="quiz-options">
+            <button onclick="checkAnswer(this, false, 'result2')">
+                <img src="image1.jpg" alt="Image 1">
+            </button>
+            <button onclick="checkAnswer(this, true, 'result2')">
+                <img src="eiffel_tower.jpg" alt="Eiffel Tower">
+            </button>
+            <button onclick="checkAnswer(this, false, 'result2')">
+                <img src="image3.jpg" alt="Image 3">
+            </button>
+            <button onclick="checkAnswer(this, false, 'result2')">
+                <img src="image4.jpg" alt="Image 4">
+            </button>
+        </div>
+        </div>
+        <div id="result2" class="result"></div>
+        <div class="quiz-container">
+            <div class="quiz-question">
+            </div>
+            <p><strong>Question 1 </strong></p>
+            <ul class="quiz-options">
+                <li><button onclick="checkAnswer(this, false, 'result1')">answer1</button></li>
+                <li><button onclick="checkAnswer(this, true, 'result1')">answer 2</button></li>
+                <li><button onclick="checkAnswer(this, false, 'result1')">answer 3</button></li>
+                <li><button onclick="checkAnswer(this, false, 'result1')">answer 4</button></li>
+            </ul>
+        </div>
+        <div id="result1" class="result"></div>
+        <div class="quiz-container">
+            <div class="quiz-question">
+            </div>
+            <p><strong>Question 1 </strong></p>
+            <ul class="quiz-options">
+                <li><button onclick="checkAnswer(this, false, 'result1')">answer1</button></li>
+                <li><button onclick="checkAnswer(this, true, 'result1')">answer 2</button></li>
+                <li><button onclick="checkAnswer(this, false, 'result1')">answer 3</button></li>
+                <li><button onclick="checkAnswer(this, false, 'result1')">answer 4</button></li>
+            </ul>
+        </div>
+        <div id="result1" class="result"></div>
+        <p><strong>Which image is correct?</strong></p>
+        <div class="quiz-options">
+            <button onclick="checkAnswer(this, false, 'result2')">
+                <img src="image1.jpg" alt="Image 1">
+            </button>
+            <button onclick="checkAnswer(this, true, 'result2')">
+                <img src="eiffel_tower.jpg" alt="Eiffel Tower">
+            </button>
+            <button onclick="checkAnswer(this, false, 'result2')">
+                <img src="image3.jpg" alt="Image 3">
+            </button>
+            <button onclick="checkAnswer(this, false, 'result2')">
+                <img src="image4.jpg" alt="Image 4">
+            </button>
+        </div>
+        </div>
+        <div id="result2" class="result"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 - LIS-753</p>
+        <p>Contact: mvillanueva@my.dom.edu | Phone: (xxx) xxx-xxxx</p>
+        <p>Mathew Villanueva</p>
+    </footer>
+    <script>
+        function checkAnswer(button, isCorrect, resultId) {
+            const result = document.getElementById(resultId);
+            result.textContent = isCorrect ? 'Correct! Great job!' : 'Incorrect. Try again!';
+            result.style.color = isCorrect ? 'green' : 'red';
+            result.style.display = 'block';
+        }
+    </script>
 </body>
+
 </html>
