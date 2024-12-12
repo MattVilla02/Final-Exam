@@ -19,13 +19,13 @@
     <div class="quiz-question">
         <p><strong>Question?</strong></p>
         <ul class="quiz-options">
-            <li><button onclick="checkAnswer(this, false)">answer1</button></li>
-            <li><button onclick="checkAnswer(this, true)">answer 2</button></li>
-            <li><button onclick="checkAnswer(this, false)">answer 3</button></li>
-            <li><button onclick="checkAnswer(this, false)">answer 4</button></li>
+            <li><button onclick="checkAnswer(this, false, 'result1')">answer1</button></li>
+            <li><button onclick="checkAnswer(this, true, 'result1')">answer 2</button></li>
+            <li><button onclick="checkAnswer(this, false, 'result1')">answer 3</button></li>
+            <li><button onclick="checkAnswer(this, false, 'result1')">answer 4</button></li>
         </ul>
     </div>
-    <div id="result1" class="result"></div>
+    <div id="result1" class="result1"></div>
 </section>
 
 <div class="quiz-question">
@@ -54,7 +54,7 @@
 </footer>
 <script>
     function checkAnswer(button, isCorrect, resultID) {
-        const result = document.getElementById('result');
+        const result = document.getElementById('resultID');
         result.textContent = isCorrect ? 'Correct! Great job!' : 'Incorrect. Try again!';
         result.style.color = isCorrect ? 'green' : 'red';
         result.style.display = 'block';
