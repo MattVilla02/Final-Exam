@@ -53,12 +53,12 @@
     <p>Mathew Villanueva</p>
 </footer>
 <script>
-    function checkAnswer(button, isCorrect, resultId) {
-        const result = document.getElementById('resultId');
-        result.textContent = isCorrect ? 'Correct! Great job!' : 'Incorrect. Try again!';
-        result.style.color = isCorrect ? 'green' : 'red';
-        result.style.display = 'block';
-    }
+    function checkAnswer(button, isCorrect, resultId) { 
+  const result = document.getElementById(resultId); 
+  result.textContent = isCorrect ? 'Correct! Great job!' : 'Incorrect. Try again!';
+  result.style.color = isCorrect ? 'green' : 'red';
+  result.style.display = 'block'; 
+}
 </script>
 </body>
 </html>
