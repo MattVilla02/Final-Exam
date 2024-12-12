@@ -99,69 +99,69 @@
         <div id="result5" class="result"></div>
         <div class="quiz-container">
             <div class="quiz-question">
-                <p><strong>What item is needed in order to break down the defective wall in the hideout?</strong></p>
+            </div>
+            <p><strong>What item is needed in order to break down the defective wall in the hideout?</strong></p>
+            <ul class="quiz-options">
+                <li><button onclick="checkAnswer(this, false, 'result6')">Fuze</button></li>
+                <li><button onclick="checkAnswer(this, true, 'result6')">Sledge Hammer</button></li>
+                <li><button onclick="checkAnswer(this, false, 'result6')">Thermite</button></li>
+                <li><button onclick="checkAnswer(this, false, 'result6')">TNT brick</button></li>
+            </ul>
+        </div>
+        <div id="result6" class="result"></div>
+        <div class="quiz-container">
+            <div class="quiz-question">
+            </div>
+            <p><strong>You can buy and sell every item available in the game?</strong></p>
+            <ul class="quiz-options">
+                <li><button onclick="checkAnswer(this, false, 'result7')">False</button></li>
+                <li><button onclick="checkAnswer(this, true, 'result7')">True</button></li>
+            </ul>
+        </div>
+        <div id="result7" class="result"></div>
+        <div class="quiz-container">
+            <div class="quiz-question">
+            </div>
+            <p><strong>What item is used to generate bitcoins in the hideout?</strong></p>
+            <ul class="quiz-options">
+                <li><button onclick="checkAnswer(this, true, 'result8')">GPU</button></li>
+                <li><button onclick="checkAnswer(this, false, 'result8')">CPU</button></li>
+                <li><button onclick="checkAnswer(this, false, 'result8')">Power Supply Unit</button></li>
+                <li><button onclick="checkAnswer(this, false, 'result8')">Relay</button></li>
+            </ul>
+        </div>
+        <div id="result8" class="result"></div>
+        <div class="quiz-container">
+            <div class="quiz-question">
+            </div>
+            <p><strong>Which one is not a throwable?</strong></p>
+            <div class="quiz-options">
+                <button onclick="checkAnswer(this, false, 'result9')">
+                    <img src="image1.jpg" alt="Geranade">
+                </button>
+                <button onclick="checkAnswer(this, false, 'result9')">
+                    <img src="eiffel_tower.jpg" alt="Smoke Geranade">
+                </button>
+                <button onclick="checkAnswer(this, true, 'result9')">
+                    <img src="image3.jpg" alt="Flare">
+                </button>
+                <button onclick="checkAnswer(this, false, 'result9')">
+                    <img src="image4.jpg" alt="Flash Bang">
+                </button>
+            </div>
+        </div>
+        <div id="result9" class="result"></div>
+        <div class="quiz-container">
+            <div class="quiz-question">
+                <p><strong>How many proposal injectors do you get from crafting in the med station?</strong></p>
                 <ul class="quiz-options">
-                    <li><button onclick="checkAnswer(this, false, 'result6')">Fuze</button></li>
-                    <li><button onclick="checkAnswer(this, true, 'result6')">Sledge Hammer</button></li>
-                    <li><button onclick="checkAnswer(this, false, 'result6')">Thermite</button></li>
-                    <li><button onclick="checkAnswer(this, false, 'result6')">TNT brick</button></li>
+                    <li><button onclick="checkAnswer(this, false, 'result10')">3</button></li>
+                    <li><button onclick="checkAnswer(this, true, 'result10')">7</button></li>
+                    <li><button onclick="checkAnswer(this, false, 'result10')">12</button></li>
+                    <li><button onclick="checkAnswer(this, false, 'result10')">8</button></li>
                 </ul>
             </div>
-            <div id="result6" class="result"></div>
-
-            <div class="quiz-container">
-                <div class="quiz-question">
-                </div>
-                <p><strong>You can buy and sell every item available in the game?</strong></p>
-                <ul class="quiz-options">
-                    <li><button onclick="checkAnswer(this, false, 'result7')">False</button></li>
-                    <li><button onclick="checkAnswer(this, true, 'result7')">True</button></li>
-                </ul>
-            </div>
-            <div id="result7" class="result"></div>
-            <div class="quiz-container">
-                <div class="quiz-question">
-                </div>
-                <p><strong>What item is used to generate bitcoins in the hideout?</strong></p>
-                <ul class="quiz-options">
-                    <li><button onclick="checkAnswer(this, true, 'result8')">GPU</button></li>
-                    <li><button onclick="checkAnswer(this, false, 'result8')">CPU</button></li>
-                    <li><button onclick="checkAnswer(this, false, 'result8')">Power Supply Unit</button></li>
-                    <li><button onclick="checkAnswer(this, false, 'result8')">Relay</button></li>
-                </ul>
-            </div>
-            <div id="result8" class="result"></div>
-            <div class="quiz-container">
-                <div class="quiz-question">
-                </div>
-                <p><strong>Which one is not a throwable?</strong></p>
-                <div class="quiz-options">
-                    <button onclick="checkAnswer(this, false, 'result9')">
-                        <img src="image1.jpg" alt="Geranade">
-                    </button>
-                    <button onclick="checkAnswer(this, false, 'result9')">
-                        <img src="eiffel_tower.jpg" alt="Smoke Geranade">
-                    </button>
-                    <button onclick="checkAnswer(this, true, 'result9')">
-                        <img src="image3.jpg" alt="Flare">
-                    </button>
-                    <button onclick="checkAnswer(this, false, 'result9')">
-                        <img src="image4.jpg" alt="Flash Bang">
-                    </button>
-                </div>
-            </div>
-            <div id="result9" class="result"></div>
-            <div class="quiz-container">
-                <div class="quiz-question">
-                    <p><strong>How many proposal injectors do you get from crafting in the med station?</strong></p>
-                    <ul class="quiz-options">
-                        <li><button onclick="checkAnswer(this, false, 'result10')">3</button></li>
-                        <li><button onclick="checkAnswer(this, true, 'result10')">7</button></li>
-                        <li><button onclick="checkAnswer(this, false, 'result10')">12</button></li>
-                        <li><button onclick="checkAnswer(this, false, 'result10')">8</button></li>
-                    </ul>
-                </div>
-                <div id="result10" class="result"></div>
+            <div id="result10" class="result"></div>
     </main>
     <footer>
         <p>&copy; 2024 - LIS-753</p>
