@@ -38,6 +38,13 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+.quiz-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f0f4f7;
+  }
 .quiz-question {
     margin-bottom: 20px;
 }
