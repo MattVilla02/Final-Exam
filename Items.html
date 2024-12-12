@@ -25,7 +25,7 @@
             <li><button onclick="checkAnswer(this, false, 'result1')">answer 4</button></li>
         </ul>
     </div>
-    <div id="result1" class="result1"></div>
+    <div id="result1" class="result"></div>
 </section>
 
 <div class="quiz-question">
@@ -53,8 +53,8 @@
     <p>Mathew Villanueva</p>
 </footer>
 <script>
-    function checkAnswer(button, isCorrect, resultID) {
-        const result = document.getElementById('resultID');
+    function checkAnswer(button, isCorrect, resultId) {
+        const result = document.getElementById('resultId');
         result.textContent = isCorrect ? 'Correct! Great job!' : 'Incorrect. Try again!';
         result.style.color = isCorrect ? 'green' : 'red';
         result.style.display = 'block';
