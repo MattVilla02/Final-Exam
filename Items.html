@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<section id="text">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Interactive Quiz - Quiz</title>
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+    <body>
+    <h2>Items In Game Quiz</h2>
+    <p>Answer the following questions:</p>
+    <div class="quiz-question">
+        <p><strong>Question?</strong></p>
+        <ul class="quiz-options">
+            <li><button onclick="checkAnswer(this, false)">answer1</button></li>
+            <li><button onclick="checkAnswer(this, true)">answer 2</button></li>
+            <li><button onclick="checkAnswer(this, false)">answer 3</button></li>
+            <li><button onclick="checkAnswer(this, false)">answer 4</button></li>
+        </ul>
+    </div>
+    <div id="result" class="result"></div>
+</section>
+
+<div class="quiz-question">
+    <p><strong>Which image is correct?</strong></p>
+    <div class="quiz-options">
+        <button onclick="checkAnswer(this, false)">
+            <img src="image1.jpg" alt="Image 1">
+        </button>
+        <button onclick="checkAnswer(this, true)">
+            <img src="eiffel_tower.jpg" alt="Eiffel Tower">
+        </button>
+        <button onclick="checkAnswer(this, false)">
+            <img src="image3.jpg" alt="Image 3">
+        </button>
+        <button onclick="checkAnswer(this, false)">
+            <img src="image4.jpg" alt="Image 4">
+        </button>
+    </div>
+</div>
+<div id="result" class="result"></div>
+</main>
+<footer>
+    <p>&copy; 2024 - LIS-753</p>
+    <p>Contact: mvillanueva@my.dom.edu | Phone: (xxx) xxx-xxxx</p>
+    <p>Mathew Villanueva</p>
+</footer>
+<script>
+    function checkAnswer(button, isCorrect) {
+        const result = document.getElementById('result');
+        result.textContent = isCorrect ? 'Correct! Great job!' : 'Incorrect. Try again!';
+        result.style.color = isCorrect ? 'green' : 'red';
+        result.style.display = 'block';
+    }
+</script>
+</body>
+</html>
